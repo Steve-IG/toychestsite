@@ -42,6 +42,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-S7T67FCBR1"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-S7T67FCBR1');
+          `}
+        </Script>
+      </head>
       <body className={`${inter.className} bg-[#efe8db] text-[#17171b] antialiased`}>
         <Script id="linkedin-partner-init" strategy="afterInteractive">
           {`
