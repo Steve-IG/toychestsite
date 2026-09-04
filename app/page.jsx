@@ -10,7 +10,7 @@ const contactHref =
 const proofMetrics = [
   {
     value: "Gen Alpha is screen-first",
-    title: "Video games dominate engageemnt",
+    title: "Video games dominate engagement",
     body: "Physical toys struggle to compete for attention.",
   },
   {
